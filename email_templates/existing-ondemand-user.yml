@@ -1,0 +1,25 @@
+subject: Veedo OnDemand Access Granted
+from: noreply@veedo.live
+text: |
+  Dear {{.User.Name}},
+
+  You have been given permissions to administer the {{.Client.Name}} account
+  on Veedo On Demand.
+
+  Kind regards,
+  Team Veedo
+html: >
+  <!doctype html>
+  <html>
+  <body>
+  <p>Dear {{.User.Name}},</p>
+
+  <p>You have been given permissions to administer the {{.Client.Name}} account
+  on Veedo On Demand.</p>
+
+  <p>Kind regards,<br />
+  Team Veedo
+  </p>
+
+  </body>
+  <html>

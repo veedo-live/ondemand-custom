@@ -1,0 +1,31 @@
+subject: Veedo OnDemand Account Created
+from: noreply@veedo.live
+text: |
+  Dear {{.User.Name}},
+
+  You have been added as a Veedo OnDemand User with username: {{.User.Username}}
+
+  To set your password and log in, please follow this link:
+
+  {{.Link}}
+
+  Kind regards,
+  Team Veedo
+html: >
+  <!doctype html>
+  <html>
+  <body>
+  <p>Dear {{.User.Name}},</p>
+
+  <p>You have been added as a Veedo OnDemand User with username: {{.User.Username}}</p>
+
+  <p>To set your password and log in, please follow this link:</p>
+
+  <p><a href="{{.Link}}">{{.Link}}</a></p>
+
+  <p>Kind regards,<br />
+  Team Veedo
+  </p>
+
+  </body>
+  <html>
